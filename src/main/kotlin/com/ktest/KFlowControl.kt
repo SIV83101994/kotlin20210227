@@ -76,6 +76,7 @@ fun main (){
 
     //動動腦
     //有一個1-10的亂數 ans ,給使用者來猜，猜對 Bingo ,有五次機會
+    //加入請猜大一點或小一點的提示
     val ans = r.nextInt(10)+1
     val max = 5
     for (i in 1..max){
@@ -85,6 +86,10 @@ fun main (){
         if (guess == ans){
             println("Bingo")
             break
+        }else if (guess > ans){
+            println("請猜小一點")
+        }else{
+            println("請猜大一點")
         }
     }
 }
