@@ -52,4 +52,13 @@ fun main() {
     println("sum = $sum")
     math = null
     //預設有null --> 變數+'?'
+
+    //動動腦2
+    val c:Int = "100".toInt()
+    println(c)
+    val d:Int? = "abc".toIntOrNull() ?: 0 //如果得到null則產生0給d變數
+    println(d)
+    val f:Int? = null?.toIntOrNull() ?: -1
+    println(f)
+
 }
