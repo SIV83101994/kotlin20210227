@@ -9,5 +9,6 @@ fun main(){
     val sum = (chinese ?: 0) + (english ?: 0) + (math ?: 0)  //要用()區分獨立事件
     println(sum)
 
-    var sum2 = chinese?.plus(english ?: 0) ?: 0
+    var sum2 = chinese?.plus(english ?: 0) ?: 0   //如果沒有chinese 則全部歸零
+    println(sum2)
 }
