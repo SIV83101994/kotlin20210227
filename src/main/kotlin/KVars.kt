@@ -40,4 +40,16 @@ fun main() {
     var b : Short = a.toShort()
     println("$a $b")
 
+    var e : Float = 1.23f
+    var intMax = Int.MAX_VALUE // Int 相當於 Integer
+
+    //動動腦
+    var chinese : String = "100"
+    var english = "90"
+    var math : String? = "80"
+    //請算出總分?
+    var sum = chinese.toInt() + english.toInt() + math?.toIntOrNull()!!
+    println("sum = $sum")
+    math = null
+    //預設有null --> 變數+'?'
 }
