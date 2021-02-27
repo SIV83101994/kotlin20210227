@@ -8,4 +8,6 @@ fun main(){
     //計算總分？
     val sum = (chinese ?: 0) + (english ?: 0) + (math ?: 0)  //要用()區分獨立事件
     println(sum)
+
+    var sum2 = chinese?.plus(english ?: 0) ?: 0
 }
