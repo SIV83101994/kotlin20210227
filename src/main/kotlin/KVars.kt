@@ -1,7 +1,7 @@
 
-fun getPrice(){
+fun getPrice() : Int{
 
-
+    return  100 ;
 }
 
 
@@ -34,5 +34,10 @@ fun main() {
     println("bmi : ${bmi * 2}")  //${...} 運算式
     var price = 100
     println("cost = ${price / 4}")
+
+    //簡單轉型
+    var a : Int = 10
+    var b : Short = a.toShort()
+    println("$a $b")
 
 }
