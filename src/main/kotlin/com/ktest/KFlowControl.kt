@@ -2,6 +2,16 @@ package com.ktest
 
 import kotlin.random.Random
 
+fun getLevel(score : Int) = when(score){
+    10,9 ->"A"
+    8 ->"B"
+    7->"C"
+    6->"D"
+    else -> "E"
+
+}
+
+
 
 //if , when , for , while , do while
 class KFlowControl {
@@ -39,4 +49,6 @@ fun main (){
         else -> "E"
     }
     println(level)
+
+    println(getLevel(score))
 }
