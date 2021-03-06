@@ -1,5 +1,6 @@
 package com.lab
 
+import kotlin.math.log2
 import kotlin.math.pow
 
 fun Int.toBinary(len:Int):String{
@@ -19,7 +20,7 @@ fun main() {
         p += n
         println("最新車位狀態: ${p.toBinary(num)},p=${p}")
     }else{
-        n = n.toDouble().pow(0.5).toInt() //開根號 = *0.5次方
+        n = log2(n.toDouble()).toInt()
         println("${n}號車位無法停車")
     }
 
