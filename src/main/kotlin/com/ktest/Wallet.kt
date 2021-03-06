@@ -6,7 +6,7 @@ data class Wallet(val name: String, var money: Int ) {
         money = if (money>0) money else 0
         //拋出例外
         money = try {
-                require(money >= 0) //require(boolean判斷式)
+                require(money >= 0) //require(boolean判斷式)：檢驗函式，檢驗失敗會拋出例外
                 money
         }catch (e:Exception){
             0
