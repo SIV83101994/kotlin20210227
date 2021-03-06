@@ -18,7 +18,14 @@ fun main() {
     //set求出除以3的餘數 最小值
     println(nums.minByOrNull { it % 3 }) // it = n
 
-    val set2 = hashSetOf<Int>(1,5,2,7,6,3)
+    val set2 = hashSetOf<Int>(1,5,2,9,6,3)
     //set2 求出偶數的最大值
-    println(set2.maxByOrNull { it/2 })
+    println(set2.filter { n -> n%2 == 0 }.maxOrNull())
+    println(set2.filter { it%2 ==0 }.maxOrNull())
+    //動動腦:請問誰的名字最長？
+    //使用 maxWithOrNull
+    val names = hashSetOf<String>("Helen","John","Anita","Jackson")
+    println(names.maxByOrNull { it.length })
+    val longestString = names.maxWithOrNull(compareBy{it.length}) //參考API文件
+    println(longestString)
 }
