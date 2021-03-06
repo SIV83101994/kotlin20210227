@@ -10,7 +10,7 @@ class KHello {
 }
 
 fun main(args: Array<String>) {
-    println("Hello Kotlin!")
+    println("Hello Kotlin! 我是中文")
     // 呼叫 JHello 的 callMe
     val j  = JHello()
     j.callMe()
