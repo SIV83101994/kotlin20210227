@@ -1,11 +1,12 @@
 package com.ktest
 
-class Account(val name:String) {
+data class Account(val name:String) {
     var balance:Int = 0
         get() = field //field:欄位-->balance(變數名稱)
         set(value){
-            if (value>=0)
-            field = value
+            if (value>=0) {
+                field = value
+            }
         }
 }
 
