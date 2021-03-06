@@ -14,7 +14,11 @@ fun main() {
 
     val nums = hashSetOf<Int>(10,42,5,4) //除以3的餘數(1,0,2,1)
     //set求出除以3的餘數 最大值
-    println(set.maxByOrNull { n -> n%3  })
+    println(nums.maxByOrNull { n -> n%3  })
     //set求出除以3的餘數 最小值
-    println(set.minByOrNull { it % 3 }) // it = n
+    println(nums.minByOrNull { it % 3 }) // it = n
+
+    val set2 = hashSetOf<Int>(1,5,2,7,6,3)
+    //set2 求出偶數的最大值
+    println(set2.maxByOrNull { it/2 })
 }
