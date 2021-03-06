@@ -8,6 +8,7 @@ fun main() {
     do {
         print("電梯在${ePos}樓, 請輸入樓層(0-8):")
         var floor = readLine()!!.toInt()
+        if (floor > 8 || floor < -1) continue
         if (floor > ePos){ //電梯上樓
             println("電梯上樓")
             for (i in ePos..floor){
