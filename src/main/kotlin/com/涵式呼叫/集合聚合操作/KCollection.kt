@@ -10,5 +10,7 @@ fun main(){
     println("Max: ${numbers.maxByOrNull { it }}")
     println("Min: ${numbers.minByOrNull { it }}")
     //numbers 中 %3 的最小值
-
+    //(5,42,10,4)%3(2,0,1,1)
+    //ans:42
+    println("%3 min: ${numbers.minByOrNull{ it % 3 }}")
 }
