@@ -13,4 +13,9 @@ fun main(){
     //(5,42,10,4)%3(2,0,1,1)
     //ans:42
     println("%3 min: ${numbers.minByOrNull{ it % 3 }}")
+
+    val strings = listOf("one","two","three","four")
+    // use MaxWith()
+    val longestString = strings.maxWithOrNull(compareBy{it.length})
+    println("longest string = $longestString")
 }
