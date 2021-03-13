@@ -1,4 +1,4 @@
-package com.涵式呼叫.集合聚合操作
+package com.函式呼叫.集合聚合操作
 
 //Pair 與 Triple
 

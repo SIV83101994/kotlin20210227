@@ -1,4 +1,4 @@
-package com.涵式呼叫.集合聚合操作
+package com.函式呼叫.集合聚合操作
 
 fun main(){
     var numbers = listOf(5,42,10,4)
