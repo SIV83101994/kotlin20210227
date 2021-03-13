@@ -1,4 +1,4 @@
-package com.ktest
+package com.基礎語法
 
 //總共四個屬性:h,w,area,isSquare
 class Rect(val h:Int,val w:Int) {
