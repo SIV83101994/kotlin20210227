@@ -5,6 +5,7 @@ val action: () -> Unit = { println("Kotlin")} // Unit --> Void
 
 //內聯函式多用在高階函式中
 //將函式作用於參數或是返回值的函式
+//避免建立太多物件的困擾
 
 inline fun doCalc(a:Int,b:Int,cal:(a:Int,b:Int)->Int):Int{
     return cal(a,b)
