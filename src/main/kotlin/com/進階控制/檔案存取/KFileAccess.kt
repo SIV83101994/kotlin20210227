@@ -17,11 +17,27 @@ fun write(data:String){
 fun replace(data: String){
     File("data.txt").writeText("$data\n")
 }
+//批次寫入
+fun batchWrite(){
+    File("data.txt").bufferedWriter().use {
+        it.write("Java")
+        it.newLine()
+        it.write("Python")
+        it.newLine()
+        it.write("C#")
+        it.newLine()
+        it.write("VB")
+        it.newLine()
+    }
+}
+
 
 fun main() {
-    read()
-    write("VB")
-    read()
-    replace("Cobol")
+   // read()
+   // write("VB")
+   // read()
+   // replace("Cobol")
+   // read()
+    batchWrite()
     read()
 }
