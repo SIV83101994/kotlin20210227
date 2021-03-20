@@ -26,7 +26,7 @@ import java.sql.DriverManager
 * */
 
 fun main() {
-    val url = "jbdc:sqlite:mydb.db"
+    val url = "jdbc:sqlite:mydb.db"
     val conn = DriverManager.getConnection(url)
     val stmt = conn.createStatement()
     val sql = "select id , name, age from user"
