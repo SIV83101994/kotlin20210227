@@ -3,7 +3,7 @@ package com.類別與動作.類別成員與SingleTon
 import java.util.*
 
 
-object KSingleTon {   //object==單一物件  / class==可創建許多物件
+object KSingleTon {   //object:單一物件  / class:可創建許多物件
     private  var num : Int = 0
     init {
         num = Random().nextInt(100)
